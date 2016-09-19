@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65A362EAEE6A9673041599ABDA537D1D /* Regift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CEA1FE352F3355E0A584FCB306F854 /* Regift.swift */; };
+		70636902427B8C4402AA77A0BABF757E /* Regift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBB33F6DF5A239D7BF12C1BF6B9B4A3E /* Regift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80E1DCF2A7E4387C7F5D6479AD29698B /* AVAssetImageGeneratorTimePoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B816D85EE55E688F13091BC1263130FB /* AVAssetImageGeneratorTimePoints.swift */; };
+		8203862ACAA47D83B52AC512D90D10BC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+		9480F689E45B50761600EA43BB886F32 /* Regift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D74BEE7AB931B8CA3CF10BC9D6B0804 /* Regift-dummy.m */; };
+		ADC273B3E1BADFDA9835DA2E970A40AA /* Pods-VideoToGIF-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07C634A1AA7A21BBD6683D5C0CC228DC /* Pods-VideoToGIF-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C13445A2DD5E83A877E75B9BBBB729 /* Pods-VideoToGIF-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3688FD0043D5CB0A69962ED885A90FBD /* Pods-VideoToGIF-dummy.m */; };
+		D00BAF92899BC12993B5F6CAF037343F /* Regift.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7626C1CB4B5EB81FB6F876B0AA5DBE /* Regift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA2DAFC009CA949217A2474E7DC1B140 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		974C19EB20BD9EA565DCC8498E1F8AF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 653D9A85D5FB93BE23DD74DD27AD6D34;
+			remoteInfo = Regift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C634A1AA7A21BBD6683D5C0CC228DC /* Pods-VideoToGIF-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VideoToGIF-umbrella.h"; sourceTree = "<group>"; };
+		1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		26CEA1FE352F3355E0A584FCB306F854 /* Regift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Regift.swift; path = Regift/Regift.swift; sourceTree = "<group>"; };
+		3688FD0043D5CB0A69962ED885A90FBD /* Pods-VideoToGIF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoToGIF-dummy.m"; sourceTree = "<group>"; };
+		36B6B5E388B836B85080933A09E4A0A5 /* Regift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Regift.modulemap; sourceTree = "<group>"; };
+		593B9B4377A5BF0EE05C25180EFAB5A1 /* Pods-VideoToGIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoToGIF.release.xcconfig"; sourceTree = "<group>"; };
+		5B7626C1CB4B5EB81FB6F876B0AA5DBE /* Regift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Regift.h; path = Regift/Regift.h; sourceTree = "<group>"; };
+		5E7D9D2766B66D14C3BC92912CD511DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68BD478020C8B324261EA347A4DC51F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C2D2E7220072AE54E08E3521E675AE1 /* Pods_VideoToGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoToGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8242C94DDEB318DE90E125B257748903 /* Pods-VideoToGIF-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoToGIF-frameworks.sh"; sourceTree = "<group>"; };
+		8629ABB7364965C04377AE8FD5B7D4EA /* Pods-VideoToGIF-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoToGIF-acknowledgements.plist"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D74BEE7AB931B8CA3CF10BC9D6B0804 /* Regift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Regift-dummy.m"; sourceTree = "<group>"; };
+		A3D57DA387A434620EA7803D480F4A78 /* Pods-VideoToGIF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoToGIF.debug.xcconfig"; sourceTree = "<group>"; };
+		A3E13FC0B641966DB4111D6AACD5BF66 /* Pods-VideoToGIF-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoToGIF-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A4CADADC49D5166E5924F41A4AAC0A58 /* Pods-VideoToGIF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VideoToGIF.modulemap"; sourceTree = "<group>"; };
+		B816D85EE55E688F13091BC1263130FB /* AVAssetImageGeneratorTimePoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetImageGeneratorTimePoints.swift; path = Regift/AVAssetImageGeneratorTimePoints.swift; sourceTree = "<group>"; };
+		B8AD5CE2D6A31EA09AEEF172A2175E23 /* Regift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Regift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA21EA9936541E457F5DA818A6FFA36E /* Pods-VideoToGIF-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoToGIF-resources.sh"; sourceTree = "<group>"; };
+		DBB33F6DF5A239D7BF12C1BF6B9B4A3E /* Regift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Regift-umbrella.h"; sourceTree = "<group>"; };
+		EECFBB72C95B3E585C906F05A6669B50 /* Regift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Regift-prefix.pch"; sourceTree = "<group>"; };
+		FEB790D2D0AAE4509466E43DA18BB3AB /* Regift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Regift.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36739C287BAF3D93BEF57751B555325C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2DAFC009CA949217A2474E7DC1B140 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E840D11FFBD4BB369C7755395388BC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8203862ACAA47D83B52AC512D90D10BC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C17CEF104526ACA07B6EEE217EC43E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		37471B4C2E709DD319FBA954EAE0DFB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C2D2E7220072AE54E08E3521E675AE1 /* Pods_VideoToGIF.framework */,
+				B8AD5CE2D6A31EA09AEEF172A2175E23 /* Regift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28C17CEF104526ACA07B6EEE217EC43E /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43D0DD00837C404998457F2C217BF8E1 /* Pods-VideoToGIF */ = {
+			isa = PBXGroup;
+			children = (
+				5E7D9D2766B66D14C3BC92912CD511DF /* Info.plist */,
+				A4CADADC49D5166E5924F41A4AAC0A58 /* Pods-VideoToGIF.modulemap */,
+				A3E13FC0B641966DB4111D6AACD5BF66 /* Pods-VideoToGIF-acknowledgements.markdown */,
+				8629ABB7364965C04377AE8FD5B7D4EA /* Pods-VideoToGIF-acknowledgements.plist */,
+				3688FD0043D5CB0A69962ED885A90FBD /* Pods-VideoToGIF-dummy.m */,
+				8242C94DDEB318DE90E125B257748903 /* Pods-VideoToGIF-frameworks.sh */,
+				BA21EA9936541E457F5DA818A6FFA36E /* Pods-VideoToGIF-resources.sh */,
+				07C634A1AA7A21BBD6683D5C0CC228DC /* Pods-VideoToGIF-umbrella.h */,
+				A3D57DA387A434620EA7803D480F4A78 /* Pods-VideoToGIF.debug.xcconfig */,
+				593B9B4377A5BF0EE05C25180EFAB5A1 /* Pods-VideoToGIF.release.xcconfig */,
+			);
+			name = "Pods-VideoToGIF";
+			path = "Target Support Files/Pods-VideoToGIF";
+			sourceTree = "<group>";
+		};
+		56B5520E311A45B61AD275E1AE3505A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA4030D4861C2C2C2360F070D80F1C9D /* Regift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				56B5520E311A45B61AD275E1AE3505A2 /* Pods */,
+				37471B4C2E709DD319FBA954EAE0DFB8 /* Products */,
+				AB947E133280FC008A1CB8F816DDBBEE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		840624C84D6518BF4917EBDDB27819BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68BD478020C8B324261EA347A4DC51F7 /* Info.plist */,
+				36B6B5E388B836B85080933A09E4A0A5 /* Regift.modulemap */,
+				FEB790D2D0AAE4509466E43DA18BB3AB /* Regift.xcconfig */,
+				9D74BEE7AB931B8CA3CF10BC9D6B0804 /* Regift-dummy.m */,
+				EECFBB72C95B3E585C906F05A6669B50 /* Regift-prefix.pch */,
+				DBB33F6DF5A239D7BF12C1BF6B9B4A3E /* Regift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Regift";
+			sourceTree = "<group>";
+		};
+		AB947E133280FC008A1CB8F816DDBBEE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43D0DD00837C404998457F2C217BF8E1 /* Pods-VideoToGIF */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FA4030D4861C2C2C2360F070D80F1C9D /* Regift */ = {
+			isa = PBXGroup;
+			children = (
+				B816D85EE55E688F13091BC1263130FB /* AVAssetImageGeneratorTimePoints.swift */,
+				5B7626C1CB4B5EB81FB6F876B0AA5DBE /* Regift.h */,
+				26CEA1FE352F3355E0A584FCB306F854 /* Regift.swift */,
+				840624C84D6518BF4917EBDDB27819BA /* Support Files */,
+			);
+			path = Regift;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1571CE66360B80EEBF64B7FAD1F76920 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC273B3E1BADFDA9835DA2E970A40AA /* Pods-VideoToGIF-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6A7D5DB0CD43015A0A2C2E3D0154E37 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70636902427B8C4402AA77A0BABF757E /* Regift-umbrella.h in Headers */,
+				D00BAF92899BC12993B5F6CAF037343F /* Regift.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3F8CF36FBD4A798B58A27C70CC6D12CD /* Pods-VideoToGIF */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0D627022057342B6DB200D1CC0042B0 /* Build configuration list for PBXNativeTarget "Pods-VideoToGIF" */;
+			buildPhases = (
+				CAFC732AE9A1EDD794A356E705B56973 /* Sources */,
+				36739C287BAF3D93BEF57751B555325C /* Frameworks */,
+				1571CE66360B80EEBF64B7FAD1F76920 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B4B019FD813963D06ABA0869A25DB821 /* PBXTargetDependency */,
+			);
+			name = "Pods-VideoToGIF";
+			productName = "Pods-VideoToGIF";
+			productReference = 6C2D2E7220072AE54E08E3521E675AE1 /* Pods_VideoToGIF.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		653D9A85D5FB93BE23DD74DD27AD6D34 /* Regift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C79833C9E20E7851E8A26085FBCF28EE /* Build configuration list for PBXNativeTarget "Regift" */;
+			buildPhases = (
+				286852B40F8E0F1A3E31CD5DAFDB7A31 /* Sources */,
+				4E840D11FFBD4BB369C7755395388BC0 /* Frameworks */,
+				D6A7D5DB0CD43015A0A2C2E3D0154E37 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Regift;
+			productName = Regift;
+			productReference = B8AD5CE2D6A31EA09AEEF172A2175E23 /* Regift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					3F8CF36FBD4A798B58A27C70CC6D12CD = {
+						LastSwiftMigration = 0800;
+					};
+					653D9A85D5FB93BE23DD74DD27AD6D34 = {
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 37471B4C2E709DD319FBA954EAE0DFB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F8CF36FBD4A798B58A27C70CC6D12CD /* Pods-VideoToGIF */,
+				653D9A85D5FB93BE23DD74DD27AD6D34 /* Regift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		286852B40F8E0F1A3E31CD5DAFDB7A31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80E1DCF2A7E4387C7F5D6479AD29698B /* AVAssetImageGeneratorTimePoints.swift in Sources */,
+				9480F689E45B50761600EA43BB886F32 /* Regift-dummy.m in Sources */,
+				65A362EAEE6A9673041599ABDA537D1D /* Regift.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAFC732AE9A1EDD794A356E705B56973 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C13445A2DD5E83A877E75B9BBBB729 /* Pods-VideoToGIF-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B4B019FD813963D06ABA0869A25DB821 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Regift;
+			target = 653D9A85D5FB93BE23DD74DD27AD6D34 /* Regift */;
+			targetProxy = 974C19EB20BD9EA565DCC8498E1F8AF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0577E960F68FF02722D75DA2D211E3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 3.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		05DC675DB0BBC8D208377A65AFA7C2CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB790D2D0AAE4509466E43DA18BB3AB /* Regift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Regift/Regift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Regift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Regift/Regift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Regift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3FE93074B753894D94A07821A9275096 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D57DA387A434620EA7803D480F4A78 /* Pods-VideoToGIF.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoToGIF/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoToGIF/Pods-VideoToGIF.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VideoToGIF;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		578820E498FFD85CA5D93A33D365FBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 3.0;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6825A27F9773B65BD72A8BEC3F8F0AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB790D2D0AAE4509466E43DA18BB3AB /* Regift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Regift/Regift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Regift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Regift/Regift.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Regift;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF9A42BF628F8B962B9D870A71FAB18E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593B9B4377A5BF0EE05C25180EFAB5A1 /* Pods-VideoToGIF.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-VideoToGIF/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-VideoToGIF/Pods-VideoToGIF.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_VideoToGIF;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0577E960F68FF02722D75DA2D211E3A8 /* Debug */,
+				578820E498FFD85CA5D93A33D365FBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C79833C9E20E7851E8A26085FBCF28EE /* Build configuration list for PBXNativeTarget "Regift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05DC675DB0BBC8D208377A65AFA7C2CA /* Debug */,
+				6825A27F9773B65BD72A8BEC3F8F0AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0D627022057342B6DB200D1CC0042B0 /* Build configuration list for PBXNativeTarget "Pods-VideoToGIF" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FE93074B753894D94A07821A9275096 /* Debug */,
+				AF9A42BF628F8B962B9D870A71FAB18E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Regift {
+  umbrella header "Regift-umbrella.h"
+
+  export *
+  module * { export * }
+}
