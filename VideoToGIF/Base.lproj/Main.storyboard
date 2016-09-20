@@ -177,61 +177,69 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="VideoToGIF" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="440" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="493" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <stackView distribution="equalCentering" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e86-r7-rdR">
-                                <rect key="frame" x="20" y="0.0" width="400" height="270"/>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="jnj-us-kfg">
+                                <rect key="frame" x="0.0" y="0.0" width="246" height="270"/>
                                 <subviews>
-                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="jnj-us-kfg">
-                                        <rect key="frame" x="0.0" y="0.0" width="190" height="270"/>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JNy-8C-RHG">
+                                        <rect key="frame" x="18" y="165" width="210" height="17"/>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Choose a video to convert to GIF." id="7x4-wS-TJx">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rVX-Wy-cIY">
+                                        <rect key="frame" x="61" y="117" width="125" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Choose Video" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dJL-9d-0Dt">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="chooseFile:" target="XfG-lQ-9wD" id="bHa-mn-NP0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JNy-8C-RHG" secondAttribute="trailing" constant="20" id="1AM-Dg-6Xl"/>
+                                    <constraint firstItem="rVX-Wy-cIY" firstAttribute="centerX" secondItem="jnj-us-kfg" secondAttribute="centerX" id="A09-hk-9Z1"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rVX-Wy-cIY" secondAttribute="trailing" constant="20" id="Wlr-2q-Z1C"/>
+                                    <constraint firstItem="JNy-8C-RHG" firstAttribute="centerX" secondItem="jnj-us-kfg" secondAttribute="centerX" id="bW6-OX-hEo"/>
+                                    <constraint firstItem="rVX-Wy-cIY" firstAttribute="top" secondItem="JNy-8C-RHG" secondAttribute="bottom" constant="20" id="clr-Lx-9Mw"/>
+                                    <constraint firstItem="rVX-Wy-cIY" firstAttribute="centerY" secondItem="jnj-us-kfg" secondAttribute="centerY" id="hvZ-sr-7ZP"/>
+                                    <constraint firstItem="rVX-Wy-cIY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="jnj-us-kfg" secondAttribute="leading" constant="20" id="jNL-YE-WqX"/>
+                                    <constraint firstItem="JNy-8C-RHG" firstAttribute="leading" secondItem="jnj-us-kfg" secondAttribute="leading" constant="20" id="kJm-3n-Sqq"/>
+                                </constraints>
+                            </customView>
+                            <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="c9O-bM-xvN">
+                                <rect key="frame" x="244" y="20" width="5" height="230"/>
+                            </box>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="max-bR-i2O">
+                                <rect key="frame" x="247" y="0.0" width="246" height="270"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6X3-gp-BY2">
+                                        <rect key="frame" x="20" y="100" width="206" height="70"/>
                                         <subviews>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JNy-8C-RHG">
-                                                <rect key="frame" x="-10" y="165" width="210" height="17"/>
-                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Choose a video to convert to GIF." id="7x4-wS-TJx">
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cru-fW-Zm9">
+                                                <rect key="frame" x="80" y="53" width="46" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="15 FPS" id="9u2-RD-r2S">
                                                     <font key="font" metaFont="system"/>
                                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rVX-Wy-cIY">
-                                                <rect key="frame" x="39" y="117" width="112" height="32"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="100" id="2ll-tF-SIz"/>
-                                                </constraints>
-                                                <buttonCell key="cell" type="push" title="Choose Video" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dJL-9d-0Dt">
-                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                    <font key="font" metaFont="system"/>
-                                                </buttonCell>
-                                                <connections>
-                                                    <action selector="chooseFile:" target="XfG-lQ-9wD" id="bHa-mn-NP0"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="rVX-Wy-cIY" firstAttribute="centerX" secondItem="jnj-us-kfg" secondAttribute="centerX" id="A09-hk-9Z1"/>
-                                            <constraint firstAttribute="width" constant="190" id="FqE-iK-PhY"/>
-                                            <constraint firstItem="JNy-8C-RHG" firstAttribute="centerX" secondItem="jnj-us-kfg" secondAttribute="centerX" id="bW6-OX-hEo"/>
-                                            <constraint firstItem="rVX-Wy-cIY" firstAttribute="top" secondItem="JNy-8C-RHG" secondAttribute="bottom" constant="20" id="clr-Lx-9Mw"/>
-                                            <constraint firstItem="rVX-Wy-cIY" firstAttribute="centerY" secondItem="jnj-us-kfg" secondAttribute="centerY" id="hvZ-sr-7ZP"/>
-                                        </constraints>
-                                    </customView>
-                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="max-bR-i2O">
-                                        <rect key="frame" x="198" y="0.0" width="202" height="270"/>
-                                        <subviews>
-                                            <box horizontalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="c9O-bM-xvN">
-                                                <rect key="frame" x="-2" y="20" width="5" height="230"/>
-                                            </box>
                                             <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uYZ-fx-er0">
-                                                <rect key="frame" x="19" y="202" width="165" height="20"/>
-                                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="60" doubleValue="15" tickMarkPosition="above" sliderType="linear" id="01D-sm-Wfd"/>
+                                                <rect key="frame" x="-2" y="27" width="210" height="20"/>
+                                                <sliderCell key="cell" continuous="YES" enabled="NO" state="on" alignment="left" maxValue="60" doubleValue="15" tickMarkPosition="above" sliderType="linear" id="01D-sm-Wfd"/>
                                                 <connections>
                                                     <action selector="frameRateChanged:" target="XfG-lQ-9wD" id="MqF-jY-hdZ"/>
                                                 </connections>
                                             </slider>
                                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="p5l-sI-ujd">
-                                                <rect key="frame" x="37" y="117" width="128" height="32"/>
-                                                <buttonCell key="cell" type="push" title="Convert to GIF" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="If7-Ql-Pww">
+                                                <rect key="frame" x="39" y="-7" width="128" height="32"/>
+                                                <buttonCell key="cell" type="push" title="Convert to GIF" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="If7-Ql-Pww">
                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                     <font key="font" metaFont="system"/>
                                                 </buttonCell>
@@ -239,55 +247,51 @@
                                                     <action selector="convertToGIF:" target="XfG-lQ-9wD" id="D6b-xo-FaR"/>
                                                 </connections>
                                             </button>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cru-fW-Zm9">
-                                                <rect key="frame" x="78" y="228" width="46" height="17"/>
-                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="15 FPS" id="9u2-RD-r2S">
-                                                    <font key="font" metaFont="system"/>
-                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                </textFieldCell>
-                                            </textField>
+                                            <progressIndicator hidden="YES" wantsLayer="YES" maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="Hs9-Ix-9S5">
+                                                <rect key="frame" x="95" y="54" width="16" height="16"/>
+                                            </progressIndicator>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="c9O-bM-xvN" secondAttribute="bottom" constant="20" id="6vG-bT-7a9"/>
-                                            <constraint firstItem="uYZ-fx-er0" firstAttribute="top" secondItem="Cru-fW-Zm9" secondAttribute="bottom" constant="8" id="AEv-7a-m0v"/>
-                                            <constraint firstItem="p5l-sI-ujd" firstAttribute="centerX" secondItem="max-bR-i2O" secondAttribute="centerX" id="CUR-Eh-z3S"/>
-                                            <constraint firstAttribute="trailing" secondItem="uYZ-fx-er0" secondAttribute="trailing" constant="20" id="GPb-ty-yaa"/>
-                                            <constraint firstItem="Cru-fW-Zm9" firstAttribute="centerX" secondItem="max-bR-i2O" secondAttribute="centerX" id="I0v-8e-iYY"/>
-                                            <constraint firstItem="p5l-sI-ujd" firstAttribute="centerY" secondItem="max-bR-i2O" secondAttribute="centerY" id="Sgj-fk-Zev"/>
-                                            <constraint firstItem="Cru-fW-Zm9" firstAttribute="top" secondItem="max-bR-i2O" secondAttribute="top" constant="25" id="YuH-Bo-zDk"/>
-                                            <constraint firstItem="c9O-bM-xvN" firstAttribute="leading" secondItem="max-bR-i2O" secondAttribute="leading" id="jc1-Cv-f2H"/>
-                                            <constraint firstItem="uYZ-fx-er0" firstAttribute="leading" secondItem="c9O-bM-xvN" secondAttribute="trailing" constant="20" id="liT-rP-DHg"/>
-                                            <constraint firstItem="c9O-bM-xvN" firstAttribute="top" secondItem="max-bR-i2O" secondAttribute="top" constant="20" id="y6P-Hz-lWC"/>
-                                        </constraints>
-                                    </customView>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="jnj-us-kfg" firstAttribute="leading" secondItem="e86-r7-rdR" secondAttribute="leading" id="5sY-Gz-G3O"/>
-                                    <constraint firstItem="max-bR-i2O" firstAttribute="leading" secondItem="jnj-us-kfg" secondAttribute="trailing" id="GYS-u0-Uon"/>
-                                    <constraint firstAttribute="width" constant="400" id="Rdr-m8-ff1"/>
+                                    <constraint firstItem="6X3-gp-BY2" firstAttribute="leading" secondItem="max-bR-i2O" secondAttribute="leading" constant="20" id="1Z6-3T-xYx"/>
+                                    <constraint firstItem="6X3-gp-BY2" firstAttribute="centerY" secondItem="max-bR-i2O" secondAttribute="centerY" id="Bhf-6K-qar"/>
+                                    <constraint firstAttribute="trailing" secondItem="6X3-gp-BY2" secondAttribute="trailing" constant="20" id="CuU-Pr-Xyt"/>
                                 </constraints>
-                                <visibilityPriorities>
-                                    <integer value="1000"/>
-                                    <integer value="1000"/>
-                                </visibilityPriorities>
-                                <customSpacing>
-                                    <real value="3.4028234663852886e+38"/>
-                                    <real value="3.4028234663852886e+38"/>
-                                </customSpacing>
-                            </stackView>
+                            </customView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="e86-r7-rdR" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="2zR-5q-CSd"/>
-                            <constraint firstItem="e86-r7-rdR" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="cDe-qM-sKy"/>
-                            <constraint firstAttribute="bottom" secondItem="e86-r7-rdR" secondAttribute="bottom" id="qZP-jG-Or7"/>
-                            <constraint firstAttribute="trailing" secondItem="e86-r7-rdR" secondAttribute="trailing" constant="20" id="t0d-HR-grl"/>
+                            <constraint firstItem="jnj-us-kfg" firstAttribute="width" secondItem="max-bR-i2O" secondAttribute="width" id="5qH-IF-8ud"/>
+                            <constraint firstItem="jnj-us-kfg" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="9Os-3I-z4x"/>
+                            <constraint firstAttribute="bottom" secondItem="jnj-us-kfg" secondAttribute="bottom" id="Djr-vu-jwb"/>
+                            <constraint firstItem="c9O-bM-xvN" firstAttribute="leading" secondItem="jnj-us-kfg" secondAttribute="trailing" id="JER-9i-v7c"/>
+                            <constraint firstItem="c9O-bM-xvN" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="JGt-wc-6u9"/>
+                            <constraint firstItem="jnj-us-kfg" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="SEM-E6-XhO"/>
+                            <constraint firstAttribute="bottom" secondItem="c9O-bM-xvN" secondAttribute="bottom" constant="20" id="W6y-Gw-Z8z"/>
+                            <constraint firstItem="c9O-bM-xvN" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="fE6-My-Hou"/>
+                            <constraint firstAttribute="bottom" secondItem="max-bR-i2O" secondAttribute="bottom" id="nB2-xU-ks0"/>
+                            <constraint firstItem="max-bR-i2O" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="pPF-LN-MAO"/>
+                            <constraint firstAttribute="trailing" secondItem="max-bR-i2O" secondAttribute="trailing" id="wRr-Xr-gI1"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="chooseVideoButton" destination="rVX-Wy-cIY" id="pT4-ka-GEe"/>
+                        <outlet property="convertToButton" destination="p5l-sI-ujd" id="lEe-Nz-GXW"/>
                         <outlet property="frameRateField" destination="Cru-fW-Zm9" id="6fY-Tk-iDA"/>
                         <outlet property="frameRateSlider" destination="uYZ-fx-er0" id="e9I-tP-KLC"/>
+                        <outlet property="progressIndicator" destination="Hs9-Ix-9S5" id="g51-UT-Fmv"/>
                         <outlet property="videoMetadataField" destination="JNy-8C-RHG" id="NWr-ST-Oyu"/>
                     </connections>
                 </viewController>

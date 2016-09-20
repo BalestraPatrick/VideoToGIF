@@ -12,9 +12,11 @@ import Regift
 class ViewController: NSViewController {
     
     @IBOutlet weak var chooseVideoButton: NSButton!
+    @IBOutlet weak var convertToButton: NSButton!
     @IBOutlet weak var videoMetadataField: NSTextField!
     @IBOutlet weak var frameRateField: NSTextField!
     @IBOutlet weak var frameRateSlider: NSSlider!
+    @IBOutlet weak var progressIndicator: NSProgressIndicator!
     
     fileprivate var videoURL: URL?
     fileprivate let fileManager = FileManager.default
@@ -69,7 +71,8 @@ class ViewController: NSViewController {
     // MARK: Functions
     
     private func updateUIAfterGettingVideoPath(url: URL) {
-        
+        frameRateSlider.isEnabled = true
+        convertToButton.isEnabled = true
         chooseVideoButton.title = "Change Another Video"
         videoMetadataField.stringValue = url.fileMetadata()
         videoURL = url
@@ -79,7 +82,10 @@ class ViewController: NSViewController {
         
         guard let url = videoURL else { return }
         
-        Regift.createGIFFromSource(url, destinationFileURL: nil, frameCount: 100, delayTime: 1, loopCount: 0) { result in
+        progressIndicator.isHidden = false
+        progressIndicator.startAnimation(nil)
+        
+        Regift.createGIFFromSource(url, startTime: 0.0, duration: 2.0, frameRate: 15) { result in
             
             if let result = result {
                 let gifMetadata = result.fileMetadata()
@@ -103,15 +109,19 @@ class ViewController: NSViewController {
         openFileDialog.resolvesAliases = true
         openFileDialog.beginSheetModal(for: window, completionHandler: { result in
             
-            if let destinationURL = openFileDialog.url?.appendingPathComponent("file.gif"), result == NSModalResponseOK {
+            self.progressIndicator.stopAnimation(nil)
+            self.progressIndicator.isHidden = true
+
+            if let videoName = self.videoURL?.deletingPathExtension().lastPathComponent, let destinationURL = openFileDialog.url?.appendingPathComponent("\(videoName).gif"), result == NSModalResponseOK {
                 
                 do {
                     try self.fileManager.moveItem(at: gifURL, to: destinationURL)
                 }
                 catch let error as NSError {
-                    print("Ooops! Something went wrong: \(error)")
+                    let alert = NSAlert()
+                    alert.messageText = error.localizedDescription
+                    alert.runModal()
                 }
-                
             } else {
                 print("No video choosen")
             }
