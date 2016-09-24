@@ -111,7 +111,7 @@ class ViewController: NSViewController {
             videoURL = url
             frameRateSlider.isEnabled = true
             convertToButton.isEnabled = true
-            chooseVideoButton.title = "Change Another Video"
+            chooseVideoButton.title = "Change Video"
             videoMetadataField.stringValue = url.fileMetadata()
             frameRateSlider.isHidden = false
             frameRateField.stringValue = "\(frameRateSlider.intValue) FPS"
