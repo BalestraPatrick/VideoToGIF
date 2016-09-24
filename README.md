@@ -7,6 +7,9 @@
 
 The project is written in Swift 3.0 and uses [Regift](https://github.com/matthewpalmer/Regift) to convert videos to GIF.
 
+## Installation
+Run the project yourself with Xcode 8 or just grab the application from the [releases](https://github.com/BalestraPatrick/VideoToGIF/releases) page.
+
 ## Author
 
 I'm [Patrick Balestra](http://www.patrickbalestra.com).
