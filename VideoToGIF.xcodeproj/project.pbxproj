@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		61001F6B715B46CC9E8CDD1D /* Pods_VideoToGIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ED83CD2A9687A5399A51EB /* Pods_VideoToGIF.framework */; };
+		AE53BA3C1D96E7DB008B2381 /* VideoState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE53BA3B1D96E7DB008B2381 /* VideoState.swift */; };
 		AE730D0C1D8EF49E00BE0DD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE730D0B1D8EF49E00BE0DD5 /* AppDelegate.swift */; };
 		AE730D0E1D8EF49E00BE0DD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE730D0D1D8EF49E00BE0DD5 /* ViewController.swift */; };
 		AE730D101D8EF49E00BE0DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE730D0F1D8EF49E00BE0DD5 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		9BC4B88A635A2EDD6A71BA19 /* Pods-VideoToGIF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoToGIF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoToGIF/Pods-VideoToGIF.debug.xcconfig"; sourceTree = "<group>"; };
+		AE53BA3B1D96E7DB008B2381 /* VideoState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoState.swift; sourceTree = "<group>"; };
 		AE730D081D8EF49E00BE0DD5 /* VideoToGIF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoToGIF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE730D0B1D8EF49E00BE0DD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE730D0D1D8EF49E00BE0DD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			children = (
 				AE730D0B1D8EF49E00BE0DD5 /* AppDelegate.swift */,
 				AE730D0D1D8EF49E00BE0DD5 /* ViewController.swift */,
+				AE53BA3B1D96E7DB008B2381 /* VideoState.swift */,
 				AE9B5BAA1D8FFD1F00F22881 /* URL+Metadata.swift */,
 				AE8A92121D95123A000B6B60 /* NSProgressIndicator+Convenience.swift */,
 				AE730D111D8EF49E00BE0DD5 /* Main.storyboard */,
@@ -226,6 +229,7 @@
 				AE730D0E1D8EF49E00BE0DD5 /* ViewController.swift in Sources */,
 				AE9B5BAB1D8FFD1F00F22881 /* URL+Metadata.swift in Sources */,
 				AE730D0C1D8EF49E00BE0DD5 /* AppDelegate.swift in Sources */,
+				AE53BA3C1D96E7DB008B2381 /* VideoState.swift in Sources */,
 				AE8A92131D95123A000B6B60 /* NSProgressIndicator+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

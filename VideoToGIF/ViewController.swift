@@ -9,13 +9,6 @@
 import Cocoa
 import Regift
 
-enum VideoState {
-    case initial
-    case selected(url: URL)
-    case converting
-    case converted(url: URL?)
-}
-
 class ViewController: NSViewController {
     
     @IBOutlet weak var chooseVideoButton: NSButton!
@@ -93,6 +86,7 @@ class ViewController: NSViewController {
     // MARK: Functions
 
     private func updateVideoState() {
+
         switch videoState {
         case .converting:
             progressIndicator.start()
@@ -130,7 +124,6 @@ class ViewController: NSViewController {
         }
     }
 
-    
     private func convertToGIF() {
         
         if case .selected(let url) = videoState {
