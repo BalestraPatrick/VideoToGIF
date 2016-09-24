@@ -7,9 +7,13 @@
 //
 
 import Foundation
+import AVFoundation
 
 extension URL {
-    
+
+    /// Creates a string containing some basic metadata for the given URL video.
+    ///
+    /// - returns: A string with the filename and correctly formatted filesize.
     func fileMetadata() -> String {
         let fileManager = FileManager.default
         var fileMetadata = lastPathComponent
@@ -19,5 +23,14 @@ extension URL {
             fileMetadata += "\n\(fileSizeString)"
         } catch {}
         return fileMetadata
+    }
+
+    /// Finds out the duration for the given URL video.
+    ///
+    /// - returns: The duration of the video.
+    func videoDuration() -> Float {
+        let videoAssetDuration = AVURLAsset(url: self).duration
+        let videoDuration = Float(CMTimeGetSeconds(videoAssetDuration))
+        return videoDuration
     }
 }

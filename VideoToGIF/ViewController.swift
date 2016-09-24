@@ -9,6 +9,13 @@
 import Cocoa
 import Regift
 
+enum VideoState {
+    case initial
+    case selected(url: URL)
+    case converting
+    case converted(url: URL?)
+}
+
 class ViewController: NSViewController {
     
     @IBOutlet weak var chooseVideoButton: NSButton!
@@ -17,39 +24,54 @@ class ViewController: NSViewController {
     @IBOutlet weak var frameRateField: NSTextField!
     @IBOutlet weak var frameRateSlider: NSSlider!
     @IBOutlet weak var progressIndicator: NSProgressIndicator!
-    
-    fileprivate var videoURL: URL?
+
     fileprivate let fileManager = FileManager.default
-    
-    override func viewWillAppear() {
-        super.viewWillAppear()
-        
-        view.window?.title = "Video to GIF"
+    fileprivate var videoURL: URL?
+    fileprivate var gifURL: URL?
+    fileprivate var videoState = VideoState.initial {
+        didSet {
+            updateVideoState()
+        }
     }
+
+    lazy var selectVideoDialog: NSOpenPanel = {
+        let panel = NSOpenPanel()
+        panel.prompt = "Select Video"
+        panel.worksWhenModal = true
+        panel.allowsMultipleSelection = false
+        panel.canChooseDirectories = false
+        panel.canChooseFiles = true
+        panel.resolvesAliases = true
+        return panel
+    }()
+
+    lazy var saveGIFDialog: NSOpenPanel = {
+        let panel = NSOpenPanel()
+        panel.prompt = "Save GIF"
+        panel.worksWhenModal = true
+        panel.allowsMultipleSelection = false
+        panel.canChooseDirectories = true
+        panel.canChooseFiles = false
+        panel.resolvesAliases = true
+        return panel
+    }()
     
     // MARK: Actions
 
     @IBAction func chooseFile(_ sender: AnyObject) {
         
         guard let window = view.window else { return }
-        
-        let openFileDialog = NSOpenPanel()
-        openFileDialog.prompt = "Select Video"
-        openFileDialog.worksWhenModal = true
-        openFileDialog.allowsMultipleSelection = false
-        openFileDialog.canChooseDirectories = false
-        openFileDialog.canChooseFiles = true
-        openFileDialog.resolvesAliases = true
-        openFileDialog.beginSheetModal(for: window, completionHandler: { result in
-            
+
+        selectVideoDialog.beginSheetModal(for: window, completionHandler: { result in
+
             // If the user pressed on the "Select Video" button, get the URL of the file.
             if result == NSModalResponseOK {
                 // Close the open panel dialog.
-                openFileDialog.close()
+                self.selectVideoDialog.close()
                 
                 // Update the UI and store the video URL.
-                if let url = openFileDialog.url {
-                    self.updateUIAfterGettingVideoPath(url: url)
+                if let url = self.selectVideoDialog.url {
+                    self.videoState = .selected(url: url)
                 } else {
                     // Display an error message.
                     let alert = NSAlert()
@@ -69,59 +91,70 @@ class ViewController: NSViewController {
     }
     
     // MARK: Functions
-    
-    private func updateUIAfterGettingVideoPath(url: URL) {
-        frameRateSlider.isEnabled = true
-        convertToButton.isEnabled = true
-        chooseVideoButton.title = "Change Another Video"
-        videoMetadataField.stringValue = url.fileMetadata()
-        videoURL = url
+
+    private func updateVideoState() {
+        switch videoState {
+        case .converting:
+            progressIndicator.start()
+        case .converted(let destinationURL):
+            if let originalVideoURL = videoURL, let gifURL = gifURL, let destinationURL = destinationURL {
+                let gifFileName = originalVideoURL.deletingPathExtension().lastPathComponent + ".gif"
+                let finalGIFURL = destinationURL.appendingPathComponent(gifFileName)
+                do {
+                    try fileManager.moveItem(at: gifURL, to: finalGIFURL)
+                } catch {
+                    let alert = NSAlert()
+                    alert.messageText = error.localizedDescription
+                    alert.runModal()
+                }
+
+                let gifMetadata = finalGIFURL.fileMetadata()
+                frameRateSlider.isHidden = true
+                frameRateField.stringValue = gifMetadata
+            }
+            progressIndicator.stop()
+        case .selected(let url):
+            videoURL = url
+            frameRateSlider.isEnabled = true
+            convertToButton.isEnabled = true
+            chooseVideoButton.title = "Change Another Video"
+            videoMetadataField.stringValue = url.fileMetadata()
+            frameRateSlider.isHidden = false
+            frameRateField.stringValue = "\(frameRateSlider.intValue) FPS"
+
+        case .initial:
+            frameRateSlider.isEnabled = false
+            convertToButton.isEnabled = false
+            chooseVideoButton.title = "Choose Video"
+            frameRateField.stringValue = "\(frameRateSlider.intValue) FPS"
+        }
     }
+
     
     private func convertToGIF() {
         
-        guard let url = videoURL else { return }
-        
-        progressIndicator.isHidden = false
-        progressIndicator.startAnimation(nil)
-        
-        Regift.createGIFFromSource(url, startTime: 0.0, duration: 2.0, frameRate: 15) { result in
-            
-            if let result = result {
-                let gifMetadata = result.fileMetadata()
-                frameRateSlider.isHidden = true
-                frameRateField.stringValue = gifMetadata
-                askUserWhereToSave(gifURL: result)
+        if case .selected(let url) = videoState {
+            videoState = .converting
+
+            Regift.createGIFFromSource(url, startTime: 0.0, duration: url.videoDuration(), frameRate: frameRateSlider.integerValue) { result in
+                self.gifURL = result
+                self.askUserWhereToSave(gifURL: url)
             }
+        } else if let gifURL = gifURL {
+            askUserWhereToSave(gifURL: gifURL)
         }
     }
 
     private func askUserWhereToSave(gifURL: URL) {
         
         guard let window = view.window else { return }
-        
-        let openFileDialog = NSOpenPanel()
-        openFileDialog.prompt = "Save GIF"
-        openFileDialog.worksWhenModal = true
-        openFileDialog.allowsMultipleSelection = false
-        openFileDialog.canChooseDirectories = true
-        openFileDialog.canChooseFiles = false
-        openFileDialog.resolvesAliases = true
-        openFileDialog.beginSheetModal(for: window, completionHandler: { result in
-            
-            self.progressIndicator.stopAnimation(nil)
-            self.progressIndicator.isHidden = true
 
-            if let videoName = self.videoURL?.deletingPathExtension().lastPathComponent, let destinationURL = openFileDialog.url?.appendingPathComponent("\(videoName).gif"), result == NSModalResponseOK {
-                
-                do {
-                    try self.fileManager.moveItem(at: gifURL, to: destinationURL)
-                }
-                catch let error as NSError {
-                    let alert = NSAlert()
-                    alert.messageText = error.localizedDescription
-                    alert.runModal()
-                }
+        saveGIFDialog.beginSheetModal(for: window, completionHandler: { result in
+
+            self.saveGIFDialog.close()
+
+            if let destinationURL = self.saveGIFDialog.url, result == NSModalResponseOK {
+                self.videoState = .converted(url: destinationURL)
             } else {
                 print("No video choosen")
             }

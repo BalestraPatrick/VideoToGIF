@@ -12,6 +12,7 @@
 		AE730D0E1D8EF49E00BE0DD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE730D0D1D8EF49E00BE0DD5 /* ViewController.swift */; };
 		AE730D101D8EF49E00BE0DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE730D0F1D8EF49E00BE0DD5 /* Assets.xcassets */; };
 		AE730D131D8EF49E00BE0DD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE730D111D8EF49E00BE0DD5 /* Main.storyboard */; };
+		AE8A92131D95123A000B6B60 /* NSProgressIndicator+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE8A92121D95123A000B6B60 /* NSProgressIndicator+Convenience.swift */; };
 		AE9B5BAB1D8FFD1F00F22881 /* URL+Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9B5BAA1D8FFD1F00F22881 /* URL+Metadata.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		AE730D0F1D8EF49E00BE0DD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE730D121D8EF49E00BE0DD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AE730D141D8EF49E00BE0DD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE8A92121D95123A000B6B60 /* NSProgressIndicator+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSProgressIndicator+Convenience.swift"; sourceTree = "<group>"; };
 		AE9B5BAA1D8FFD1F00F22881 /* URL+Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+Metadata.swift"; sourceTree = "<group>"; };
 		C0ED83CD2A9687A5399A51EB /* Pods_VideoToGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoToGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85512B7624CB1DC6F3709B4 /* Pods-VideoToGIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoToGIF.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoToGIF/Pods-VideoToGIF.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				AE730D0B1D8EF49E00BE0DD5 /* AppDelegate.swift */,
 				AE730D0D1D8EF49E00BE0DD5 /* ViewController.swift */,
 				AE9B5BAA1D8FFD1F00F22881 /* URL+Metadata.swift */,
+				AE8A92121D95123A000B6B60 /* NSProgressIndicator+Convenience.swift */,
 				AE730D111D8EF49E00BE0DD5 /* Main.storyboard */,
 				AE9B5BA91D8FD53500F22881 /* Resources */,
 			);
@@ -223,6 +226,7 @@
 				AE730D0E1D8EF49E00BE0DD5 /* ViewController.swift in Sources */,
 				AE9B5BAB1D8FFD1F00F22881 /* URL+Metadata.swift in Sources */,
 				AE730D0C1D8EF49E00BE0DD5 /* AppDelegate.swift in Sources */,
+				AE8A92131D95123A000B6B60 /* NSProgressIndicator+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
