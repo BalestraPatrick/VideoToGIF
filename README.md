@@ -3,7 +3,7 @@
 ![](images/1.png)
 
 ## Description
-`VideoToGIF` is a simple Mac app to convert videos to GIF. Useful for quickly create a demo for your open source project or app. 
+`VideoToGIF` is a simple Mac app to convert videos to GIF. Useful for quickly creating a demo for your open source project or app. 
 
 The project is written in Swift 3.0 and uses [Regift](https://github.com/matthewpalmer/Regift) to convert videos to GIF.
 
