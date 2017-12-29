@@ -1,21 +1,12 @@
 PODS:
-  - Regift (1.2.0)
+  - Regift (1.3.0)
 
 DEPENDENCIES:
-  - Regift (from `https://github.com/BalestraPatrick/Regift.git`)
-
-EXTERNAL SOURCES:
-  Regift:
-    :git: https://github.com/BalestraPatrick/Regift.git
-
-CHECKOUT OPTIONS:
-  Regift:
-    :commit: f447b2228a962acb9adba588f40a5e0b59aa75a3
-    :git: https://github.com/BalestraPatrick/Regift.git
+  - Regift
 
 SPEC CHECKSUMS:
-  Regift: c9ac13d922047c39e385d2c19be338461a259fd6
+  Regift: 43c5e057949a9e2b16de0bcf0a221a5dbd033211
 
-PODFILE CHECKSUM: 3e256b1265eff8b71d2062be18839b4a7104f72f
+PODFILE CHECKSUM: 017e891c5710baa4e06a73c92691c61ee0d5d372
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.4.0.beta.2
