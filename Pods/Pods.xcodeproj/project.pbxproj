@@ -33,21 +33,21 @@
 		26CEA1FE352F3355E0A584FCB306F854 /* Regift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Regift.swift; path = Regift/Regift.swift; sourceTree = "<group>"; };
 		270DD1219F1E6CF00379D39F252D87C6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		3688FD0043D5CB0A69962ED885A90FBD /* Pods-VideoToGIF-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VideoToGIF-dummy.m"; sourceTree = "<group>"; };
-		36B6B5E388B836B85080933A09E4A0A5 /* Regift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Regift.modulemap; sourceTree = "<group>"; };
+		36B6B5E388B836B85080933A09E4A0A5 /* Regift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Regift.modulemap; sourceTree = "<group>"; };
 		593B9B4377A5BF0EE05C25180EFAB5A1 /* Pods-VideoToGIF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoToGIF.release.xcconfig"; sourceTree = "<group>"; };
 		5B7626C1CB4B5EB81FB6F876B0AA5DBE /* Regift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Regift.h; path = Regift/Regift.h; sourceTree = "<group>"; };
 		5E7D9D2766B66D14C3BC92912CD511DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68BD478020C8B324261EA347A4DC51F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6C2D2E7220072AE54E08E3521E675AE1 /* Pods_VideoToGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_VideoToGIF.framework; path = "Pods-VideoToGIF.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2D2E7220072AE54E08E3521E675AE1 /* Pods_VideoToGIF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoToGIF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8242C94DDEB318DE90E125B257748903 /* Pods-VideoToGIF-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoToGIF-frameworks.sh"; sourceTree = "<group>"; };
 		8629ABB7364965C04377AE8FD5B7D4EA /* Pods-VideoToGIF-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VideoToGIF-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D74BEE7AB931B8CA3CF10BC9D6B0804 /* Regift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Regift-dummy.m"; sourceTree = "<group>"; };
 		A3D57DA387A434620EA7803D480F4A78 /* Pods-VideoToGIF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VideoToGIF.debug.xcconfig"; sourceTree = "<group>"; };
 		A3E13FC0B641966DB4111D6AACD5BF66 /* Pods-VideoToGIF-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VideoToGIF-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A4CADADC49D5166E5924F41A4AAC0A58 /* Pods-VideoToGIF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-VideoToGIF.modulemap"; sourceTree = "<group>"; };
+		A4CADADC49D5166E5924F41A4AAC0A58 /* Pods-VideoToGIF.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-VideoToGIF.modulemap"; sourceTree = "<group>"; };
 		B816D85EE55E688F13091BC1263130FB /* AVAssetImageGeneratorTimePoints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AVAssetImageGeneratorTimePoints.swift; path = Regift/AVAssetImageGeneratorTimePoints.swift; sourceTree = "<group>"; };
-		B8AD5CE2D6A31EA09AEEF172A2175E23 /* Regift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Regift.framework; path = Regift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8AD5CE2D6A31EA09AEEF172A2175E23 /* Regift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Regift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA21EA9936541E457F5DA818A6FFA36E /* Pods-VideoToGIF-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VideoToGIF-resources.sh"; sourceTree = "<group>"; };
 		DBB33F6DF5A239D7BF12C1BF6B9B4A3E /* Regift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Regift-umbrella.h"; sourceTree = "<group>"; };
 		EECFBB72C95B3E585C906F05A6669B50 /* Regift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Regift-prefix.pch"; sourceTree = "<group>"; };
@@ -166,7 +166,6 @@
 				26CEA1FE352F3355E0A584FCB306F854 /* Regift.swift */,
 				840624C84D6518BF4917EBDDB27819BA /* Support Files */,
 			);
-			name = Regift;
 			path = Regift;
 			sourceTree = "<group>";
 		};
@@ -236,12 +235,18 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					F10ACBAAF913DF5A01DE822F251C06E8 = {
+						LastSwiftMigration = 1020;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -496,7 +501,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -528,7 +533,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
